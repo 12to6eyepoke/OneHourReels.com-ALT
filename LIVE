@@ -1110,78 +1110,7 @@
             </div>
         </section>
 
-        <!-- Features Section -->
-        <section class="features" id="features">
-            <div class="container">
-                <div class="section-header fade-in">
-                    <div class="section-badge">COMPREHENSIVE SOLUTION</div>
-                    <h2>Everything You Need to Succeed on Social Media</h2>
-                    <p>Professional video content creation backed by data-driven strategies and expert execution</p>
-                </div>
-                
-                <div class="features-grid">
-                    <div class="feature-card fade-in">
-                        <div class="feature-icon">
-                            <i class="fas fa-tachometer-alt"></i>
-                        </div>
-                        <h3 class="feature-title">Lightning-Fast Delivery</h3>
-                        <p class="feature-description">
-                            Get professional reels in as fast as 1 hour for urgent needs. Choose from multiple delivery options to match your timeline and budget.
-                        </p>
-                    </div>
-                    
-                    <div class="feature-card fade-in">
-                        <div class="feature-icon">
-                            <i class="fas fa-users"></i>
-                        </div>
-                        <h3 class="feature-title">Human Creativity</h3>
-                        <p class="feature-description">
-                            Real professional editors and designers craft each reel. We use the latest technology to bring you authentic, engaging videos that connect.
-                        </p>
-                    </div>
-                    
-                    <div class="feature-card fade-in">
-                        <div class="feature-icon">
-                            <i class="fas fa-chart-line"></i>
-                        </div>
-                        <h3 class="feature-title">Proven ROI</h3>
-                        <p class="feature-description">
-                            Our clients average 10x engagement increase and see real revenue growth. Most recover their investment within the first WEEK.
-                        </p>
-                    </div>
-                    
-                    <div class="feature-card fade-in">
-                        <div class="feature-icon">
-                            <i class="fas fa-music"></i>
-                        </div>
-                        <h3 class="feature-title">Custom Audio</h3>
-                        <p class="feature-description">
-                            Original jingles and trending audio selection tailored to your brand. Stand out with memorable soundtracks that drive engagement.
-                        </p>
-                    </div>
-                    
-                    <div class="feature-card fade-in">
-                        <div class="feature-icon">
-                            <i class="fas fa-share-alt"></i>
-                        </div>
-                        <h3 class="feature-title">Multi-Platform</h3>
-                        <p class="feature-description">
-                            Optimized for Instagram Reels, TikTok, YouTube Shorts, and more. One video, maximum reach across all platforms.
-                        </p>
-                    </div>
-                    
-                    <div class="feature-card fade-in">
-                        <div class="feature-icon">
-                            <i class="fas fa-handshake"></i>
-                        </div>
-                        <h3 class="feature-title">No Lock-In Contracts</h3>
-                        <p class="feature-description">
-                            Cancel anytime with no penalties. We earn your business every week through results, not contractual obligations.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
+        Update your HTML structure to include the new feature-header, feature-toggle, and feature-content elements
 
       
         
