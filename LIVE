@@ -1242,6 +1242,22 @@
                             </p>
                         </div>
                     </div>
+                    <div class="feature-card fade-in">
+                        <div class="feature-header" onclick="toggleFeature(this)">
+                            <div class="feature-icon">
+                                <i class="fas fa-thumbs-down"></i>
+                            </div>
+                            <h3 class="feature-title">Looks amateur</h3>
+                            <div class="feature-toggle">
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </div>
+                        <div class="feature-content">
+                            <p class="feature-description">
+                                <strong>Why it stings:</strong> Even when you manage to create content, it screams "DIY" and hurts your brand credibility compared to competitors with professional-looking videos.
+                            </p>
+                        </div>
+                    </div>
                     
                     <div class="feature-card fade-in">
                         <div class="feature-header" onclick="toggleFeature(this)">
@@ -1425,7 +1441,39 @@
                             </p>
                         </div>
                     </div>
+                    <div class="feature-card fade-in">
+                        <div class="feature-header" onclick="toggleFeature(this)">
+                            <div class="feature-icon">
+                                <i class="fas fa-share"></i>
+                            </div>
+                            <h3 class="feature-title">We can post for you</h3>
+                            <div class="feature-toggle">
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </div>
+                        <div class="feature-content">
+                            <p class="feature-description">
+                                Just give us one-time permission to post on your accounts (like giving a trusted employee the key) and we'll handle everything - timing, captions, hashtags. You stay in control and can revoke access anytime.
+                            </p>
+                        </div>
+                    </div>
                     
+                    <div class="feature-card fade-in">
+                        <div class="feature-header" onclick="toggleFeature(this)">
+                            <div class="feature-icon">
+                                <i class="fas fa-pen"></i>
+                            </div>
+                            <h3 class="feature-title">Fresh captions that convert</h3>
+                            <div class="feature-toggle">
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </div>
+                        <div class="feature-content">
+                            <p class="feature-description">
+                                Every reel comes with scroll-stopping captions and clear calls-to-action written in your brand voice - no more staring at a blank screen wondering what to write.
+                            </p>
+                        </div>
+                    </div>
                     <div class="feature-card fade-in">
                         <div class="feature-header" onclick="toggleFeature(this)">
                             <div class="feature-icon">
