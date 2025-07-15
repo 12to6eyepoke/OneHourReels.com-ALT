@@ -414,44 +414,35 @@
             }
         }
 
-        /* Problem Section */
+        /* Solution Section */
+        .solution-section {
+            padding: 80px 0;
+            background: var(--primary-white);
+        }
+
+        /* Update problem section to use same card styling as features */
         .problem-section {
             padding: 80px 0;
             background: var(--gray-100);
         }
 
-        .problem-grid {
+        /* Both sections use the same grid and card styling as features */
+        .problem-section .features-grid,
+        .solution-section .features-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
             gap: 30px;
-            margin-top: 60px;
         }
 
-        .problem-card {
+        .problem-section .feature-card,
+        .solution-section .feature-card {
             background: var(--primary-white);
-            padding: 30px;
-            border-radius: 8px;
-            border: 1px solid var(--gray-200);
-            transition: var(--transition);
         }
 
-        .problem-card:hover {
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        .problem-section .feature-header,
+        .solution-section .feature-header {
+            background: var(--primary-white);
         }
-
-        .problem-icon {
-            font-size: 2rem;
-            color: var(--danger);
-            margin-bottom: 1rem;
-        }
-
-        .problem-stat {
-            font-size: 2rem;
-            font-weight: 800;
-            color: var(--primary-black);
-            margin-bottom: 0.5rem;
-        }
-
         /* Testimonial Section */
         .testimonial {
             padding: 80px 0;
@@ -1174,42 +1165,282 @@
             </div>
         </section>
 
-        <!-- Problem Section -->
+      <!-- What You're Up Against Section -->
         <section class="problem-section">
             <div class="container">
                 <div class="section-header fade-in">
                     <div class="section-badge">THE CHALLENGE</div>
-                    <h2>Why Your Business Needs Professional Video Content</h2>
-                    <p>The social media landscape has changed. Static posts no longer drive engagement.</p>
+                    <h2>What you're up against — plain and simple</h2>
+                    <p>The social media landscape has changed. Here's what's working against you.</p>
                 </div>
                 
-                <div class="problem-grid">
-                    <div class="problem-card fade-in">
-                        <i class="fas fa-chart-down problem-icon"></i>
-                        <h4>Algorithm Changes</h4>
-                        <div class="problem-stat">5%</div>
-                        <p>Average reach for photo posts. Without video content, your business is invisible to 95% of your audience.</p>
+                <div class="features-grid">
+                    <div class="feature-card fade-in">
+                        <div class="feature-header" onclick="toggleFeature(this)">
+                            <div class="feature-icon">
+                                <i class="fas fa-dollar-sign"></i>
+                            </div>
+                            <h3 class="feature-title">Commercials are pricey</h3>
+                            <div class="feature-toggle">
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </div>
+                        <div class="feature-content">
+                            <p class="feature-description">
+                                <strong>Why it stings:</strong> They really work but are unaffordable at $10k or more.
+                            </p>
+                        </div>
                     </div>
                     
-                    <div class="problem-card fade-in">
-                        <i class="fas fa-clock problem-icon"></i>
-                        <h4>Time Investment</h4>
-                        <div class="problem-stat">15+ hrs</div>
-                        <p>Weekly time needed to create quality video content. That's valuable time away from running your business.</p>
+                    <div class="feature-card fade-in">
+                        <div class="feature-header" onclick="toggleFeature(this)">
+                            <div class="feature-icon">
+                                <i class="fas fa-image"></i>
+                            </div>
+                            <h3 class="feature-title">Photos flop</h3>
+                            <div class="feature-toggle">
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </div>
+                        <div class="feature-content">
+                            <p class="feature-description">
+                                <strong>Why it stings:</strong> About 3 out of 100 followers even notice a still picture these days.
+                            </p>
+                        </div>
                     </div>
                     
-                    <div class="problem-card fade-in">
-                        <i class="fas fa-brain problem-icon"></i>
-                        <h4>Creative Demands</h4>
-                        <div class="problem-stat">87%</div>
-                        <p>Of businesses quit creating reels after 2 months due to creative burnout and lack of fresh ideas.</p>
+                    <div class="feature-card fade-in">
+                        <div class="feature-header" onclick="toggleFeature(this)">
+                            <div class="feature-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <h3 class="feature-title">No time to edit</h3>
+                            <div class="feature-toggle">
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </div>
+                        <div class="feature-content">
+                            <p class="feature-description">
+                                <strong>Why it stings:</strong> A halfway-decent DIY reel can take hours. A great one even longer!
+                            </p>
+                        </div>
                     </div>
                     
-                    <div class="problem-card fade-in">
-                        <i class="fas fa-trophy problem-icon"></i>
-                        <h4>Competition Advantage</h4>
-                        <div class="problem-stat">10x</div>
-                        <p>More foot traffic for businesses using video content. Your competitors are already capturing your customers.</p>
+                    <div class="feature-card fade-in">
+                        <div class="feature-header" onclick="toggleFeature(this)">
+                            <div class="feature-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h3 class="feature-title">Writer's block</h3>
+                            <div class="feature-toggle">
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </div>
+                        <div class="feature-content">
+                            <p class="feature-description">
+                                <strong>Why it stings:</strong> Ideas dry up fast. Most folks who start posting reels quit.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-card fade-in">
+                        <div class="feature-header" onclick="toggleFeature(this)">
+                            <div class="feature-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h3 class="feature-title">No time for volume</h3>
+                            <div class="feature-toggle">
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </div>
+                        <div class="feature-content">
+                            <p class="feature-description">
+                                <strong>Why it stings:</strong> You need catchy videos, fast videos and new ones week after week.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How 1-Hour Reels Sorts It Out Section -->
+        <section class="solution-section">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <div class="section-badge">OUR SOLUTION</div>
+                    <h2>How 1-Hour Reels sorts it out</h2>
+                    <p>Professional video content creation that solves every challenge you're facing.</p>
+                </div>
+                
+                <div class="features-grid">
+                    <div class="feature-card fade-in">
+                        <div class="feature-header" onclick="toggleFeature(this)">
+                            <div class="feature-icon">
+                                <i class="fas fa-credit-card"></i>
+                            </div>
+                            <h3 class="feature-title">Pay per reel or get reels weekly</h3>
+                            <div class="feature-toggle">
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </div>
+                        <div class="feature-content">
+                            <p class="feature-description">
+                                Pro quality without the cost or commitment.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-card fade-in">
+                        <div class="feature-header" onclick="toggleFeature(this)">
+                            <div class="feature-icon">
+                                <i class="fas fa-magic"></i>
+                            </div>
+                            <h3 class="feature-title">Turn photos into motion</h3>
+                            <div class="feature-toggle">
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </div>
+                        <div class="feature-content">
+                            <p class="feature-description">
+                                Send us pictures, get scroll-stopping reels.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-card fade-in">
+                        <div class="feature-header" onclick="toggleFeature(this)">
+                            <div class="feature-icon">
+                                <i class="fas fa-battery-full"></i>
+                            </div>
+                            <h3 class="feature-title">Zero time drain</h3>
+                            <div class="feature-toggle">
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </div>
+                        <div class="feature-content">
+                            <p class="feature-description">
+                                You keep running, we keep the reels coming.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-card fade-in">
+                        <div class="feature-header" onclick="toggleFeature(this)">
+                            <div class="feature-icon">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <h3 class="feature-title">Endless ideas on tap</h3>
+                            <div class="feature-toggle">
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </div>
+                        <div class="feature-content">
+                            <p class="feature-description">
+                                Our focus is unique creative reels for you as often as you need.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-card fade-in">
+                        <div class="feature-header" onclick="toggleFeature(this)">
+                            <div class="feature-icon">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+                            <h3 class="feature-title">No tech headaches</h3>
+                            <div class="feature-toggle">
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </div>
+                        <div class="feature-content">
+                            <p class="feature-description">
+                                Real human producer, no software for you to learn.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-card fade-in">
+                        <div class="feature-header" onclick="toggleFeature(this)">
+                            <div class="feature-icon">
+                                <i class="fas fa-music"></i>
+                            </div>
+                            <h3 class="feature-title">Trending sound or custom jingles</h3>
+                            <div class="feature-toggle">
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </div>
+                        <div class="feature-content">
+                            <p class="feature-description">
+                                We match each reel with music that's hot right now—no copyright headaches.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-card fade-in">
+                        <div class="feature-header" onclick="toggleFeature(this)">
+                            <div class="feature-icon">
+                                <i class="fas fa-palette"></i>
+                            </div>
+                            <h3 class="feature-title">On-brand colors & fonts</h3>
+                            <div class="feature-toggle">
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </div>
+                        <div class="feature-content">
+                            <p class="feature-description">
+                                Your logo, your palette.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-card fade-in">
+                        <div class="feature-header" onclick="toggleFeature(this)">
+                            <div class="feature-icon">
+                                <i class="fas fa-hashtag"></i>
+                            </div>
+                            <h3 class="feature-title">Built-in hashtag set</h3>
+                            <div class="feature-toggle">
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </div>
+                        <div class="feature-content">
+                            <p class="feature-description">
+                                Fresh, niche tags added so the algorithm knows where to send your video.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-card fade-in">
+                        <div class="feature-header" onclick="toggleFeature(this)">
+                            <div class="feature-icon">
+                                <i class="fas fa-calendar"></i>
+                            </div>
+                            <h3 class="feature-title">Weekend & holiday coverage</h3>
+                            <div class="feature-toggle">
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </div>
+                        <div class="feature-content">
+                            <p class="feature-description">
+                                Need a Fourth-of-July spot? A Black Friday teaser? Done!
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-card fade-in">
+                        <div class="feature-header" onclick="toggleFeature(this)">
+                            <div class="feature-icon">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <h3 class="feature-title">No long contract</h3>
+                            <div class="feature-toggle">
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </div>
+                        <div class="feature-content">
+                            <p class="feature-description">
+                                Stay for a month or a year; cancel anytime if it's not moving the needle.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
