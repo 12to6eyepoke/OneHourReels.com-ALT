@@ -356,6 +356,10 @@
 
         .hero-visual {
             position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
         }
 
         .video-container {
@@ -364,6 +368,49 @@
             padding: 20px;
             box-shadow: 0 20px 40px rgba(0,0,0,0.1);
             border: 1px solid var(--gray-200);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        /* Center the Instagram blockquote */
+        .video-container .instagram-media {
+            margin: 0 auto !important;
+            max-width: 100% !important;
+            min-width: 300px !important;
+            width: 100% !important;
+        }
+
+        /* Ensure the Instagram embed is responsive */
+        .video-container .instagram-media iframe {
+            max-width: 100% !important;
+            margin: 0 auto !important;
+        }
+
+        /* Mobile adjustments for Instagram embed */
+        @media (max-width: 768px) {
+            .video-container {
+                max-width: 350px;
+                padding: 15px;
+            }
+            
+            .video-container .instagram-media {
+                min-width: 280px !important;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .video-container {
+                max-width: 320px;
+                padding: 10px;
+            }
+            
+            .video-container .instagram-media {
+                min-width: 260px !important;
+            }
         }
 
         /* Features Section */
