@@ -154,33 +154,32 @@
             align-items: center;
         }
 
-        .logo {
-            display: flex;
-            align-items: center;
-            text-decoration: none;
-            gap: 12px;
-        }
+      .logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+}
 
-        .logo-mark {
-            width: 45px;
-            height: 45px;
-            background: var(--primary-yellow);
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: 800;
-            font-size: 20px;
-            color: var(--primary-black);
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
+/* kill the old badge if you keep the class somewhere else */
+.logo-mark { display: none; }
 
-        .logo-text {
-            font-family: 'Poppins', sans-serif;
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--primary-black);
-        }
+/* new image styling */
+.logo-image {
+    width: 45px;           /* match the old badge */
+    height: 45px;
+    border-radius: 8px;    /* keeps the rounded-square vibe */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    object-fit: contain;   /* no distortion */
+}
+
+.logo-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-black);
+}
+
 
         .nav-menu {
             display: flex;
@@ -1091,9 +1090,10 @@
         <nav class="container">
             <div class="nav-container">
                 <a href="/" class="logo">
-                    <div class="logo-mark">1H</div>
+                    <img src="https://onehourreels.com/web-media/One-Hour-Reels-Logo-500x500.png" alt="One Hour Reels logo" class="logo-image" style="height:40px; width:auto;">
                     <span class="logo-text">One Hour Reels</span>
-                </a>
+  </a>
+
                 
                 <ul class="nav-menu">
                     <li><a href="#features" class="nav-link">Features</a></li>
@@ -1284,7 +1284,7 @@
             <div class="container">
                 <div class="section-header fade-in">
                     <div class="section-badge">OUR SOLUTION</div>
-                    <h2>How 1-Hour Reels sorts it out</h2>
+                    <h2>How One Hour Reels sorts it out</h2>
                     <p>Professional video content creation that solves every challenge you're facing.</p>
                 </div>
                 
