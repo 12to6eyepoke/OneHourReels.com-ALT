@@ -1161,7 +1161,7 @@
     <div class="top-bar">
         <div class="container">
             <div class="top-bar-content">
-                <span class="top-bar-text">🚀 Get your first professional reel in 48 hours</span>
+                <span class="top-bar-text">Get your first professional reel in One hour!</span>
                 <button class="top-bar-cta" data-tally-open="3l270B" data-tally-emoji-animation="none" data-tally-auto-close="1000" data-tally-form-events-forwarding="1">
                     Join the Waitlist
                 </button>
@@ -1742,7 +1742,7 @@
                     <div class="pricing-card single-reel fade-in">
                         <div class="pricing-header">
                             <h3 class="plan-name">Need Just One Professional Reel?</h3>
-                            <div class="price">$299<span class="price-period"> one-time</span></div>
+                            <div class="price">Speed=Cost<span class="price-period"> wait longer and save</span></div>
                         </div>
                         <p style="font-size: 18px; margin-bottom: 20px; text-align: center;">Perfect for urgent announcements, special events, or testing our quality.</p>
                         <div class="process-grid">
