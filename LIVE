@@ -1099,9 +1099,9 @@
                 <ul class="nav-menu">
                     <li><a href="#features" class="nav-link">Features</a></li>
                     <li><a href="#testimonials" class="nav-link">Success Stories</a></li>
-                    <li><a href="#pricing" class="nav-link">Pricing</a></li>
+                    <li><a href="https://onehourreels.com/pricing.html" class="nav-link">Pricing</a></li>
                     <li><a href="#faq" class="nav-link">FAQ</a></li>
-                    <li><a href="#pricing" class="nav-cta">Get Started</a></li>
+                    <li><a href="https://onehourreels.com/pricing.html" class="nav-cta">Get Started</a></li>
                 </ul>
                 
                 <button class="mobile-toggle" aria-label="Toggle mobile menu">
@@ -1130,7 +1130,7 @@
                         </p>
                         
                         <div class="hero-cta-group">
-                            <a href="#pricing" class="btn btn-primary">
+                            <a href="https://onehourreels.com/pricing.html" class="btn btn-primary">
                                 Start Growing Today
                                 <i class="fas fa-arrow-right"></i>
                             </a>
@@ -1851,9 +1851,9 @@
                 <div class="footer-section">
                     <h5>Services</h5>
                     <ul class="footer-links">
-                        <li><a href="#pricing">Single Reels</a></li>
-                        <li><a href="#pricing">Weekly Plans</a></li>
-                        <li><a href="#pricing">Enterprise</a></li>
+                        <li><a href="https://onehourreels.com/pricing.html">Single Reels</a></li>
+                        <li><a href="https://onehourreels.com/pricing.html">Weekly Plans</a></li>
+                        <li><a href="https://onehourreels.com/pricing.html">Enterprise</a></li>
                         <li><a href="#features">Features</a></li>
                     </ul>
                 </div>
