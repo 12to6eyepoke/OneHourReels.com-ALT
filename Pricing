@@ -446,6 +446,12 @@
         }
         
         /* Responsive */
+        @media (max-width: 1200px) {
+            .pricing-grid { 
+                grid-template-columns: repeat(2, 1fr); 
+            }
+        }
+        
         @media (max-width: 768px) {
             .pricing-hero h1 { font-size: 36px; }
             .pricing-grid { grid-template-columns: 1fr; }
@@ -453,7 +459,7 @@
             .comparison-table { overflow-x: auto; }
             .faq-grid { grid-template-columns: 1fr; }
             .nav-links { gap: 15px; }
-            table { min-width: 600px; }
+            table { min-width: 800px; }
         }
     </style>
 </head>
@@ -475,7 +481,7 @@
     <!-- Hero Section -->
     <section class="pricing-hero">
         <h1>Simple, Transparent Pricing</h1>
-        <p>Join 500+ businesses creating scroll-stopping content every week. No contracts, no setup fees, just results.</p>
+        <p>From quick one-time reels to full enterprise solutions. Join 500+ businesses creating scroll-stopping content.</p>
         
         <div class="trust-indicators">
             <div class="trust-item">
@@ -506,12 +512,36 @@
 
     <!-- Pricing Cards -->
     <section class="pricing-section" id="pricing">
-        <div class="pricing-grid">
+        <div class="pricing-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+            <!-- One-Hour Reel -->
+            <div class="pricing-card">
+                <div class="card-header">
+                    <h3>One-Hour Reel</h3>
+                    <p>Need something fast? Get it in 60 minutes</p>
+                    <div class="price-display">
+                        <div class="price-amount">$299</div>
+                        <div class="price-period">one-time</div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> 1 professional reel delivered in 1 hour</li>
+                        <li><i class="fas fa-check"></i> Custom captions & hashtags</li>
+                        <li><i class="fas fa-check"></i> Custom music & jingles</li>
+                        <li><i class="fas fa-check"></i> 1 revision included</li>
+                        <li><i class="fas fa-check"></i> Professional branding polish</li>
+                        <li><i class="fas fa-check"></i> Priority support available</li>
+                    </ul>
+                    <button class="cta-button">Order Rush Reel</button>
+                    <p style="text-align: center; margin-top: 15px; font-size: 14px; color: #666;">Perfect for urgent announcements</p>
+                </div>
+            </div>
+
             <!-- Starter Plan -->
             <div class="pricing-card">
                 <div class="card-header">
                     <h3>Starter</h3>
-                    <p>Perfect for small businesses just getting started</p>
+                    <p>Consistent content for growing businesses</p>
                     <div class="price-display">
                         <div class="price-amount">$99</div>
                         <div class="price-period">per week</div>
@@ -520,15 +550,18 @@
                 </div>
                 <div class="card-body">
                     <ul class="feature-list">
-                        <li><i class="fas fa-check"></i> 1 professional reel (7-15 seconds)</li>
-                        <li><i class="fas fa-check"></i> 6 motion graphics posts</li>
+                        <li><i class="fas fa-check"></i> 3 professional reels per week</li>
+                        <li><i class="fas fa-check"></i> 25 motion graphics posts</li>
                         <li><i class="fas fa-check"></i> Custom captions & hashtags</li>
-                        <li><i class="fas fa-check"></i> Posted to Instagram & TikTok</li>
-                        <li><i class="fas fa-check"></i> Monthly engagement report</li>
-                        <li><i class="fas fa-check"></i> Email support (24h response)</li>
+                        <li><i class="fas fa-check"></i> Multi-platform posting</li>
+                        <li><i class="fas fa-check"></i> Priority support included</li>
+                        <li><i class="fas fa-check"></i> Custom music & jingles</li>
+                        <li><i class="fas fa-check"></i> 1 revision per reel</li>
+                        <li><i class="fas fa-check"></i> Holiday & seasonal themes</li>
+                        <li><i class="fas fa-check"></i> Professional branding polish</li>
                     </ul>
                     <button class="cta-button">Start Free Trial</button>
-                    <p style="text-align: center; margin-top: 15px; font-size: 14px; color: #666;">No credit card required</p>
+                    <p style="text-align: center; margin-top: 15px; font-size: 14px; color: #666;">Cancel anytime, no contracts</p>
                 </div>
             </div>
 
@@ -537,52 +570,55 @@
                 <div class="ribbon">MOST POPULAR</div>
                 <div class="card-header">
                     <h3>Growth</h3>
-                    <p>For businesses ready to scale their social presence</p>
+                    <p>Scale your social presence with data</p>
                     <div class="price-display">
-                        <div class="price-amount">$175</div>
+                        <div class="price-amount">$299</div>
                         <div class="price-period">per week</div>
-                        <div class="annual-price">$7,735/year (save $1,365)</div>
+                        <div class="annual-price">$13,255/year (save $2,340)</div>
                     </div>
                 </div>
                 <div class="card-body">
                     <ul class="feature-list">
-                        <li><i class="fas fa-check"></i> 2 custom reels per week</li>
-                        <li><i class="fas fa-check"></i> Up to 25 motion posts</li>
-                        <li><i class="fas fa-check"></i> Trending audio selection</li>
-                        <li><i class="fas fa-check"></i> All social platforms included</li>
-                        <li><i class="fas fa-check"></i> Weekly performance insights</li>
-                        <li><i class="fas fa-check"></i> Priority support (4h response)</li>
-                        <li><i class="fas fa-check"></i> 1 monthly strategy call</li>
+                        <li><i class="fas fa-check"></i> Up to 7 reels per week</li>
+                        <li><i class="fas fa-check"></i> 100 motion graphics posts</li>
+                        <li><i class="fas fa-check"></i> Unlimited revisions</li>
+                        <li><i class="fas fa-check"></i> Performance analytics dashboard</li>
+                        <li><i class="fas fa-check"></i> Dedicated content strategist</li>
+                        <li><i class="fas fa-check"></i> Multi-platform posting</li>
+                        <li><i class="fas fa-check"></i> Priority support</li>
+                        <li><i class="fas fa-check"></i> Custom music & jingles</li>
+                        <li><i class="fas fa-check"></i> Holiday & seasonal themes</li>
+                        <li><i class="fas fa-check"></i> Professional branding polish</li>
                     </ul>
                     <button class="cta-button">Start Growing Today</button>
-                    <p style="text-align: center; margin-top: 15px; font-size: 14px; color: #666;">Most chosen by successful SMBs</p>
+                    <p style="text-align: center; margin-top: 15px; font-size: 14px; color: #666;">Most chosen by ambitious SMBs</p>
                 </div>
             </div>
 
-            <!-- Pro Plan -->
+            <!-- Enterprise Plan -->
             <div class="pricing-card">
                 <div class="card-header">
-                    <h3>Pro</h3>
-                    <p>Maximum impact for ambitious brands</p>
+                    <h3>Enterprise</h3>
+                    <p>Full creative team at your service</p>
                     <div class="price-display">
-                        <div class="price-amount">$499</div>
-                        <div class="price-period">per week</div>
-                        <div class="annual-price">$22,055/year (save $3,893)</div>
+                        <div class="price-amount">Custom</div>
+                        <div class="price-period">contact for pricing</div>
                     </div>
                 </div>
                 <div class="card-body">
                     <ul class="feature-list">
-                        <li><i class="fas fa-check"></i> Daily reels on demand</li>
+                        <li><i class="fas fa-check"></i> Multiple reels per day</li>
                         <li><i class="fas fa-check"></i> Unlimited motion posts</li>
+                        <li><i class="fas fa-check"></i> Full creative team</li>
+                        <li><i class="fas fa-check"></i> Monthly strategy sessions</li>
+                        <li><i class="fas fa-check"></i> Detailed ROI reporting</li>
+                        <li><i class="fas fa-check"></i> Unlimited revisions</li>
+                        <li><i class="fas fa-check"></i> Performance analytics</li>
                         <li><i class="fas fa-check"></i> Dedicated content strategist</li>
-                        <li><i class="fas fa-check"></i> Custom brand guidelines</li>
-                        <li><i class="fas fa-check"></i> Real-time analytics dashboard</li>
-                        <li><i class="fas fa-check"></i> Instant support (30min response)</li>
-                        <li><i class="fas fa-check"></i> Weekly strategy sessions</li>
-                        <li><i class="fas fa-check"></i> A/B testing & optimization</li>
+                        <li><i class="fas fa-check"></i> All features included</li>
                     </ul>
-                    <button class="cta-button">Get VIP Access</button>
-                    <p style="text-align: center; margin-top: 15px; font-size: 14px; color: #666;">White-glove service included</p>
+                    <button class="cta-button">Contact Sales</button>
+                    <p style="text-align: center; margin-top: 15px; font-size: 14px; color: #666;">White-glove service for brands</p>
                 </div>
             </div>
         </div>
@@ -599,65 +635,138 @@
             <table>
                 <thead>
                     <tr>
-                        <th>Features</th>
+                        <th>Feature</th>
+                        <th>One-Hour Reel</th>
                         <th>Starter</th>
                         <th>Growth</th>
-                        <th>Pro</th>
+                        <th>Enterprise</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><strong>Weekly Reels</strong></td>
-                        <td>1</td>
-                        <td>2</td>
-                        <td>Up to 7</td>
+                        <td><strong>Professional reels</strong></td>
+                        <td><i class="fas fa-check check"></i></td>
+                        <td><i class="fas fa-check check"></i></td>
+                        <td><i class="fas fa-check check"></i></td>
+                        <td><i class="fas fa-check check"></i></td>
                     </tr>
                     <tr>
-                        <td><strong>Motion Posts</strong></td>
-                        <td>6</td>
+                        <td><strong>Reels per week</strong></td>
+                        <td>1 (one-time)</td>
+                        <td>3</td>
+                        <td>Up to 7</td>
+                        <td>Multiple/day</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Motion graphic posts</strong></td>
+                        <td>—</td>
                         <td>25</td>
+                        <td>100</td>
                         <td>Unlimited</td>
                     </tr>
                     <tr>
-                        <td><strong>Platform Posting</strong></td>
+                        <td><strong>Custom captions & hashtags</strong></td>
                         <td><i class="fas fa-check check"></i></td>
-                        <td><i class="fas fa-check check"></i></td>
-                        <td><i class="fas fa-check check"></i></td>
-                    </tr>
-                    <tr>
-                        <td><strong>Custom Captions</strong></td>
                         <td><i class="fas fa-check check"></i></td>
                         <td><i class="fas fa-check check"></i></td>
                         <td><i class="fas fa-check check"></i></td>
                     </tr>
                     <tr>
-                        <td><strong>Trending Audio</strong></td>
-                        <td><i class="fas fa-times times"></i></td>
+                        <td><strong>Multi-platform posting (Beta)</strong></td>
+                        <td>—</td>
+                        <td><i class="fas fa-check check"></i></td>
+                        <td><i class="fas fa-check check"></i></td>
+                        <td><i class="fas fa-check check"></i></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Priority support</strong></td>
+                        <td>Optional</td>
+                        <td><i class="fas fa-check check"></i></td>
+                        <td><i class="fas fa-check check"></i></td>
+                        <td><i class="fas fa-check check"></i></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Custom music & jingles</strong></td>
+                        <td><i class="fas fa-check check"></i></td>
+                        <td><i class="fas fa-check check"></i></td>
                         <td><i class="fas fa-check check"></i></td>
                         <td><i class="fas fa-check check"></i></td>
                     </tr>
                     <tr>
-                        <td><strong>Strategy Calls</strong></td>
-                        <td><i class="fas fa-times times"></i></td>
-                        <td>Monthly</td>
-                        <td>Weekly</td>
+                        <td><strong>Revisions</strong></td>
+                        <td>1 included</td>
+                        <td>1</td>
+                        <td>Unlimited</td>
+                        <td>Unlimited</td>
                     </tr>
                     <tr>
-                        <td><strong>Support Response</strong></td>
-                        <td>24 hours</td>
-                        <td>4 hours</td>
-                        <td>30 minutes</td>
+                        <td><strong>Holiday & seasonal themes</strong></td>
+                        <td>Optional</td>
+                        <td><i class="fas fa-check check"></i></td>
+                        <td><i class="fas fa-check check"></i></td>
+                        <td><i class="fas fa-check check"></i></td>
                     </tr>
                     <tr>
-                        <td><strong>Analytics Dashboard</strong></td>
-                        <td>Basic</td>
-                        <td>Advanced</td>
-                        <td>Real-time</td>
+                        <td><strong>Performance analytics</strong></td>
+                        <td>—</td>
+                        <td>—</td>
+                        <td><i class="fas fa-check check"></i></td>
+                        <td><i class="fas fa-check check"></i></td>
                     </tr>
                     <tr>
-                        <td><strong>A/B Testing</strong></td>
-                        <td><i class="fas fa-times times"></i></td>
-                        <td><i class="fas fa-times times"></i></td>
+                        <td><strong>Dedicated content strategist</strong></td>
+                        <td>—</td>
+                        <td>—</td>
+                        <td><i class="fas fa-check check"></i></td>
+                        <td><i class="fas fa-check check"></i></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Multiple reels per day</strong></td>
+                        <td>—</td>
+                        <td>—</td>
+                        <td>—</td>
+                        <td><i class="fas fa-check check"></i></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Unlimited motion posts</strong></td>
+                        <td>—</td>
+                        <td>—</td>
+                        <td>—</td>
+                        <td><i class="fas fa-check check"></i></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Full creative team</strong></td>
+                        <td>—</td>
+                        <td>—</td>
+                        <td>—</td>
+                        <td><i class="fas fa-check check"></i></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Monthly strategy sessions</strong></td>
+                        <td>—</td>
+                        <td>—</td>
+                        <td>—</td>
+                        <td><i class="fas fa-check check"></i></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Detailed ROI reporting</strong></td>
+                        <td>—</td>
+                        <td>—</td>
+                        <td>—</td>
+                        <td><i class="fas fa-check check"></i></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Branding polish (fonts/colors/etc.)</strong></td>
+                        <td><i class="fas fa-check check"></i></td>
+                        <td><i class="fas fa-check check"></i></td>
+                        <td><i class="fas fa-check check"></i></td>
+                        <td><i class="fas fa-check check"></i></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Cancel anytime</strong></td>
+                        <td>N/A</td>
+                        <td><i class="fas fa-check check"></i></td>
+                        <td><i class="fas fa-check check"></i></td>
                         <td><i class="fas fa-check check"></i></td>
                     </tr>
                 </tbody>
